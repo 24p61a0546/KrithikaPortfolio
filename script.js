@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Toggle menu state
       navMenu.classList.toggle('active');
+      mobileToggle.classList.toggle('is-open', !isExpanded);
       mobileToggle.setAttribute('aria-expanded', String(!isExpanded));
       
       // Toggle icon between bars and times (close)
@@ -154,5 +155,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  console.log('[Portfolio] Krithika Bathula portfolio initialized successfully.');
+  // --------------------------------------------------------------------------
+  // 7. Scroll-Triggered Animations via IntersectionObserver
+  // --------------------------------------------------------------------------
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion) {
+    animatedElements.forEach((el) => el.classList.add('is-visible'));
+  } else if ('IntersectionObserver' in window && animatedElements.length > 0) {
+    const animationObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px 0px -50px 0px',
+        threshold: 0.1
+      }
+    );
+
+    // Apply staggered animation delays for items inside grids
+    document.querySelectorAll('.skills-grid, .about-highlights, .projects-grid').forEach((grid) => {
+      const children = grid.querySelectorAll('.animate-on-scroll');
+      children.forEach((item, index) => {
+        item.style.transitionDelay = `${(index % 4) * 0.08}s`;
+      });
+    });
+
+    animatedElements.forEach((el) => animationObserver.observe(el));
+  } else {
+    animatedElements.forEach((el) => el.classList.add('is-visible'));
+  }
+
+  console.log('[Portfolio] Krithika Bathula portfolio initialized successfully with professional animations.');
 });

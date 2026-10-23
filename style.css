@@ -1042,3 +1042,244 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1.25rem;
   }
 }
+
+/* ==========================================================================
+   14. Professional Animations & Interactive Transitions
+   ========================================================================== */
+
+/* 1. Hero Entrance Animations */
+.hero-greeting {
+  animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.hero-title {
+  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+.hero-subtitle {
+  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+.hero-intro {
+  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+
+.hero-actions {
+  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+
+.hero-visual {
+  position: relative;
+  animation: heroFadeInScale 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* 2. Heading Gradient Shift Animation */
+.gradient-animated {
+  background: linear-gradient(135deg, #2563eb 0%, #0284c7 30%, #4f46e5 70%, #2563eb 100%);
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 7s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 3. Subtle Floating Decorative Elements */
+.hero-floating-element {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 10px 20px -3px rgba(37, 99, 235, 0.12), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: var(--text-main);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.float-1 {
+  top: -14px;
+  right: -10px;
+  animation: subtleFloat 4.5s ease-in-out infinite;
+}
+
+.float-2 {
+  bottom: -14px;
+  left: -10px;
+  animation: subtleFloatReverse 5s ease-in-out infinite;
+}
+
+.visual-status-pill {
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes subtleFloatReverse {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* 4. Scroll-Triggered Viewport Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 5. Project Card Hover Enhancements */
+.project-card {
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent-cyan));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #93c5fd;
+  box-shadow: 0 20px 35px -8px rgba(37, 99, 235, 0.16), 0 8px 16px -4px rgba(15, 23, 42, 0.06);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+/* 6. Smooth Button Hover Transitions */
+.btn {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.45);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  box-shadow: 0 6px 16px -4px rgba(15, 23, 42, 0.1);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* 7. Skill Card & Highlight Box Hover */
+.skill-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 12px 24px -4px rgba(37, 99, 235, 0.12);
+}
+
+.highlight-box {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 20px -4px rgba(37, 99, 235, 0.1);
+}
+
+/* 8. Mobile Navigation Menu Animation */
+.mobile-toggle i {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-toggle.is-open i {
+  transform: rotate(90deg);
+}
+
+/* 9. Accessibility: Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .gradient-animated {
+    animation: none !important;
+  }
+  .hero-floating-element, .visual-status-pill {
+    animation: none !important;
+  }
+}
