@@ -42,7 +42,7 @@ SKILLGAPANALYZER/
 | **1** | **Home (Hero)** | Welcome greeting, title `"Hi, I'm Krithika Bathula"`, subtitle `"Computer Science Engineering Student \| Aspiring Software Developer"`, summary intro, CTA buttons (*View My Projects* & *Contact Me*), and a modern SVG code illustration. |
 | **2** | **About Me** | Background as a III-year CSE student with focus on Java development, relational databases, and enterprise web architectures. Includes four highlight cards for core areas of interest. |
 | **3** | **Technical Skills** | 8 styled cards featuring core proficiencies: **Java**, **JDBC**, **Java Servlets**, **HTML**, **CSS**, **JavaScript**, **MySQL**, and **Git & GitHub**. |
-| **4** | **Projects** | Showcases the **Skill Gap Analyzer** full-stack web application with tech badges, detailed description, and links to the [GitHub Repository](https://github.com/24p61a0546/SkillGapAnalyzer) and Live Demo placeholder. |
+| **4** | **Projects** | Showcases the **Skill Gap Analyzer** full-stack web application with tech badges, detailed description, and links to the [GitHub Repository](https://github.com/24p61a0546/SkillGapAnalyzer) and [Live Demo](https://skill-gap-analyzer-jb5a.onrender.com). |
 | **5** | **Education** | Academic background: *Bachelor of Technology (B.Tech) in Computer Science and Engineering*, *III Year*, with core CS coursework and placeholders for Institution Name and Graduation Year. |
 | **6** | **Contact** | Contact information cards including GitHub profile link (`github.com/24p61a0546`), email placeholder, LinkedIn placeholder, and an interactive "Contact Me" button. |
 | **7** | **Footer** | Copyright statement `© 2026 Krithika Bathula. All rights reserved.`, social links, and an instant "Back to Top" navigation button. |
