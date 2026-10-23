@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Krithika Bathula - III-Year Computer Science and Engineering Student & Aspiring Software Developer.">
+  <title>Krithika Bathula | Portfolio - Computer Science Engineering Student</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons (Free CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Sticky Navigation Bar
+       ========================================================================= -->
+  <nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Krithika Bathula Home">
+        <span class="brand-badge">KB</span>
+        <span>Krithika<span style="color: var(--primary);">.</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-cta">
+          <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </li>
+      </ul>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fas fa-bars" id="toggleIcon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       1. HOME (Hero Section)
+       ========================================================================= -->
+  <header class="section hero-section" id="home">
+    <div class="container hero-grid">
+      
+      <!-- Hero Text Content -->
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <i class="fas fa-sparkles"></i> Welcome to my portfolio
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Krithika Bathula</span>.
+        </h1>
+        <h2 class="hero-subtitle">
+          Computer Science Engineering Student | Aspiring Software Developer
+        </h2>
+        <p class="hero-intro">
+          I am passionate about software development, with a strong focus on building dependable 
+          Java backend systems, structured database architectures, and intuitive web applications. 
+          Driven by a curiosity for how complex systems work, I strive to write clean, efficient, 
+          and scalable code.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-laptop-code"></i> View My Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Professional Decorative Illustration Card -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual-card">
+          <div class="visual-top-bar">
+            <span class="top-dot dot-red"></span>
+            <span class="top-dot dot-yellow"></span>
+            <span class="top-dot dot-green"></span>
+            <span style="margin-left: auto; font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-code);">Developer.java</span>
+          </div>
+
+          <!-- Professional Modern SVG Vector Graphic -->
+          <svg class="visual-graphic" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="360" height="200" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+            <!-- Code Editor Window -->
+            <rect x="40" y="45" width="320" height="150" rx="8" fill="#FFFFFF" stroke="#DBEAFE" stroke-width="1.5"/>
+            <!-- Syntax Lines -->
+            <rect x="60" y="65" width="80" height="10" rx="4" fill="#2563EB"/>
+            <rect x="150" y="65" width="120" height="10" rx="4" fill="#93C5FD"/>
+            <rect x="80" y="90" width="160" height="8" rx="4" fill="#64748B"/>
+            <rect x="80" y="110" width="200" height="8" rx="4" fill="#CBD5E1"/>
+            <rect x="100" y="130" width="140" height="8" rx="4" fill="#0284C7"/>
+            <rect x="80" y="150" width="90" height="8" rx="4" fill="#64748B"/>
+            <!-- Floating Decorative Tech Badges -->
+            <circle cx="310" cy="85" r="22" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+            <path d="M305 85 L310 90 L320 80" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="70" cy="180" r="14" fill="#EFF6FF" stroke="#0284C7" stroke-width="1.5"/>
+            <text x="65" y="185" fill="#0284C7" font-size="12" font-weight="bold" font-family="sans-serif">&lt;/&gt;</text>
+          </svg>
+
+          <!-- Status Indicator Pill -->
+          <div class="visual-status-pill">
+            <span><span class="status-indicator"></span> Full Stack Java &amp; Web Focus</span>
+            <span style="font-weight: 700; color: var(--primary);">CSE III Year</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. ABOUT ME
+       ========================================================================= -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-user"></i> Background</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A glimpse into my academic journey and technical interests</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Main Description -->
+        <div class="about-card">
+          <p class="about-lead">
+            I am a III-year Computer Science and Engineering student with a deep passion for 
+            backend development, relational databases, and modern web architectures.
+          </p>
+          <p class="about-text">
+            My coursework and project experience have centered on Object-Oriented Programming with Java, 
+            building robust database connections via JDBC, implementing MVC architecture with Java Servlets, 
+            and creating clean, accessible frontends using HTML, CSS, and modern JavaScript.
+          </p>
+          <p class="about-text">
+            I enjoy transforming conceptual ideas and architectural designs into functional, secure, 
+            and user-friendly applications. As an aspiring software developer, I continually strive 
+            to strengthen my foundational computer science competencies while keeping pace with 
+            industry best practices.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <a href="#skills" class="btn btn-outline btn-sm">
+              <i class="fas fa-layer-group"></i> Explore My Skills
+            </a>
+          </div>
+        </div>
+
+        <!-- Areas of Interest Cards -->
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="fas fa-mug-hot"></i></div>
+            <div>
+              <div class="highlight-title">Java Backend Engineering</div>
+              <div class="highlight-desc">OOP, Collections, Servlets &amp; MVC Design Pattern</div>
+            </div>
+          </div>
+
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="fas fa-database"></i></div>
+            <div>
+              <div class="highlight-title">Relational Databases</div>
+              <div class="highlight-desc">MySQL, JDBC, Schema Design &amp; Query Optimization</div>
+            </div>
+          </div>
+
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="fas fa-code"></i></div>
+            <div>
+              <div class="highlight-title">Responsive Web Development</div>
+              <div class="highlight-desc">Semantic HTML5, Modern CSS3 &amp; Vanilla JavaScript</div>
+            </div>
+          </div>
+
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="fas fa-code-branch"></i></div>
+            <div>
+              <div class="highlight-title">Version Control &amp; CI/CD</div>
+              <div class="highlight-desc">Git Branching, GitHub Collaboration &amp; Ant Builds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. TECHNICAL SKILLS
+       ========================================================================= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-tools"></i> Competencies</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Languages, technologies, and developer tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- 1. Java -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-java"></i>
+            </div>
+            <div>
+              <div class="skill-name">Java</div>
+              <div class="skill-badge">Core Language</div>
+            </div>
+          </div>
+          <p class="skill-desc">
+            Object-Oriented Programming (OOP), Collections Framework, Exception Handling, Streams, and Multi-threading principles.
+          </p>
+        </div>
+
+        <!-- 2. JDBC -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div>
+              <div class="skill-name">JDBC</div>
+              <div class="skill-badge">Database Connectivity</div>
+            </div>
+          </div>
+          <p class="skill-desc">
+            Connecting Java backends to relational databases, PreparedStatements, SQL injection prevention, and transaction management.
+          </p>
+        </div>
+
+        <!-- 3. Java Servlets -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <i class="fas fa-server"></i>
+            </div>
+            <div>
+              <div class="skill-name">Java Servlets</div>
+              <div class="skill-badge">Web Backend</div>
+            </div>
+          </div>
+          <p class="skill-desc">
+            HTTP request/response handling, MVC design pattern, session management, security filters, and JSON REST endpoints.
+          </p>
+        </div>
+
+        <!-- 4. HTML -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div>
+              <div class="skill-name">HTML</div>
+              <div class="skill-badge">Web Structure</div>
+            </div>
+          </div>
+          <p class="skill-desc">
+            Semantic HTML5 markup, accessible document structure, standard forms, and modern web standards.
+          </p>
+        </div>
+
+        <!-- 5. CSS -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div>
+              <div class="skill-name">CSS</div>
+              <div class="skill-badge">Styling &amp; Layout</div>
+            </div>
+          </div>
+          <p class="skill-desc">
+            CSS3 styling, Flexbox, CSS Grid layouts, media queries for responsive design, custom variables, and subtle animations.
+          </p>
+        </div>
+
+        <!-- 6. JavaScript -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-js"></i>
+            </div>
+            <div>
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-badge">Client Scripting</div>
+            </div>
+          </div>
+          <p class="skill-desc">
+            Modern JavaScript (ES6+), DOM manipulation, Fetch API for asynchronous requests, event handling, and data visualization.
+          </p>
+        </div>
+
+        <!-- 7. MySQL -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <i class="fas fa-database"></i>
+            </div>
+            <div>
+              <div class="skill-name">MySQL</div>
+              <div class="skill-badge">Relational Database</div>
+            </div>
+          </div>
+          <p class="skill-desc">
+            Relational schema design, normalization, primary and foreign key constraints, indexing, and complex SQL queries.
+          </p>
+        </div>
+
+        <!-- 8. Git & GitHub -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrapper">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div>
+              <div class="skill-name">Git and GitHub</div>
+              <div class="skill-badge">Version Control</div>
+            </div>
+          </div>
+          <p class="skill-desc">
+            Source code versioning, commit hygiene, branch management, merge conflict resolution, and remote collaboration.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. PROJECTS
+       ========================================================================= -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-folder-open"></i> Portfolio Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Real-world applications showcasing full stack development</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Skill Gap Analyzer Project Card -->
+        <article class="project-card">
+          <div class="project-top-row">
+            <span class="project-category-tag">
+              <i class="fas fa-graduation-cap"></i> College Capstone Project
+            </span>
+            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">
+              Full Stack Web Application
+            </span>
+          </div>
+
+          <h3 class="project-name">Skill Gap Analyzer</h3>
+
+          <p class="project-desc">
+            A comprehensive web application that helps users identify skill gaps and understand 
+            which skills they need to develop for a selected career. Features interactive rubric 
+            evaluations, dynamic gap calculation algorithms, multi-dimensional radar visualizations, 
+            and curated learning roadmaps.
+          </p>
+
+          <!-- Tech Stack Tags -->
+          <div class="project-tech-stack" aria-label="Technologies Used">
+            <span class="tech-tag"><i class="fab fa-java" style="color: #ef4444;"></i> Java</span>
+            <span class="tech-tag"><i class="fas fa-network-wired" style="color: #3b82f6;"></i> JDBC</span>
+            <span class="tech-tag"><i class="fas fa-server" style="color: #8b5cf6;"></i> Servlets</span>
+            <span class="tech-tag"><i class="fas fa-database" style="color: #0284c7;"></i> MySQL</span>
+            <span class="tech-tag"><i class="fab fa-html5" style="color: #f97316;"></i> HTML5</span>
+            <span class="tech-tag"><i class="fab fa-css3-alt" style="color: #2563eb;"></i> CSS3</span>
+            <span class="tech-tag"><i class="fab fa-js" style="color: #eab308;"></i> JavaScript</span>
+          </div>
+
+          <!-- Project Action Buttons -->
+          <div class="project-actions">
+            <a href="https://github.com/24p61a0546/SkillGapAnalyzer" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i class="fab fa-github"></i> GitHub Repository
+            </a>
+            <!-- Live Demo Placeholder (Replace with your active deployment link when ready) -->
+            <a href="https://skillgapanalyzer.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" title="Live Demo Deployment">
+              <i class="fas fa-external-link-alt"></i> Live Demo <span style="font-size: 0.75rem; color: var(--text-muted);">(Placeholder)</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. EDUCATION
+       ========================================================================= -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-university"></i> Academic Background</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My ongoing undergraduate computer science education</p>
+      </div>
+
+      <div class="education-container">
+        <div class="education-card">
+          <div class="edu-icon-badge">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+
+          <div class="edu-content">
+            <h3 class="edu-degree">Bachelor of Technology (B.Tech) in Computer Science and Engineering</h3>
+            <span class="edu-year-badge">III Year (Undergraduate)</span>
+
+            <!-- Placeholder for College Name & Graduation Year -->
+            <p class="edu-institution">
+              <i class="fas fa-school" style="color: var(--primary);"></i>
+              <strong>College / Institution:</strong> 
+              <span class="edu-placeholder">[Your College / University Name]</span>
+            </p>
+
+            <p class="edu-institution">
+              <i class="fas fa-calendar-alt" style="color: var(--primary);"></i>
+              <strong>Expected Graduation:</strong> 
+              <span class="edu-placeholder">[Graduation Year, e.g., 2027]</span>
+            </p>
+
+            <div class="edu-courses">
+              <strong>Core Coursework:</strong> 
+              Data Structures &amp; Algorithms, Object-Oriented Programming through Java, 
+              Database Management Systems (DBMS), Operating Systems, Web Technologies, 
+              and Computer Networks.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. CONTACT
+       ========================================================================= -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-comments"></i> Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Feel free to reach out for collaborations, project discussions, or inquiries</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Details Card -->
+        <div class="contact-info-card">
+          <div>
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-sub">
+              I am always eager to connect with fellow students, developers, and potential mentors.
+            </p>
+
+            <div class="contact-list">
+              <!-- GitHub Profile -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div>
+                  <div class="contact-item-label">GitHub Profile</div>
+                  <div class="contact-item-value">
+                    <a href="https://github.com/24p61a0546" target="_blank" rel="noopener noreferrer">
+                      github.com/24p61a0546
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email Placeholder -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-item-label">Email Address</div>
+                  <div class="contact-item-value">
+                    <span class="edu-placeholder">[your-email@example.com]</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LinkedIn Placeholder -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div>
+                  <div class="contact-item-label">LinkedIn Profile</div>
+                  <div class="contact-item-value">
+                    <span class="edu-placeholder">[Your LinkedIn Profile URL]</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-size: 0.85rem; color: var(--text-muted);">
+            <i class="fas fa-map-marker-alt" style="color: var(--primary);"></i> Based in India &bull; Open to remote and academic projects
+          </div>
+        </div>
+
+        <!-- Direct Contact Action Card -->
+        <div class="contact-direct-card">
+          <div class="contact-direct-icon">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <h3 class="contact-direct-title">Have a Question or Idea?</h3>
+          <p class="contact-direct-desc">
+            Whether you want to discuss Java web applications, inspect project code on GitHub, 
+            or explore collaborative opportunities, I would be delighted to hear from you.
+          </p>
+          <div>
+            <!-- Mailto button using placeholder email -->
+            <a href="mailto:[your-email@example.com]?subject=Hello%20Krithika" class="btn btn-primary" id="contactButton">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copyright">
+        &copy; 2026 Krithika Bathula. All rights reserved.
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/24p61a0546" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#contact" class="social-btn" aria-label="LinkedIn Placeholder">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#contact" class="social-btn" aria-label="Email Contact">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i> Top
+      </a>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
